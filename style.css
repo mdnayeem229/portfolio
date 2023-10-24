@@ -1,0 +1,440 @@
+*{
+padding: 0;
+margin: 0;
+border:none;
+outline: none;
+box-sizing: border-box;
+text-decoration: none;
+text-transform: capitalize;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+body{
+    background: #000;
+    color: #fff;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.5rem 3rem;
+position: fixed;
+background: #000;
+    color: #fff;
+    z-index: 1000;
+}
+header #logo{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+header #logo i{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+header #logo:hover{
+    background: none;
+    border: none;
+}
+header nav a{
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    background:  transparent;
+    padding: 4px 10px;
+    text-decoration: none;
+    border-radius: 0.5rem;
+}
+a.active, a:hover{
+    background: red;
+    color: #fff;
+    transition: 0.5s;
+}
+/*---------------------------cursor----------*/
+.cursor-1{
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 10px;
+    width:10px;
+    border-radius: 50%;
+    background-color: red;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: 0.5s;
+}
+.cursor-2{
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 30px;
+    width:30px;
+    border-radius: 50%;
+    border:1px solid #fff;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: 0.5s;
+}
+/*---------top to bottom scrollbar------------*/
+.to-top{
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    background:red;
+    bottom:20px;
+    right:32px;
+    border-radius: 10px;
+    box-shadow: 0.5rem 1rem rgba(0,0,0,0.1);
+    z-index: 1000;
+    font-size: 25px;
+    color: var(--body-color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    }
+    .to-top:hover{
+        color: #fff;
+    }
+    .to-top-active{
+        opacity: 1;
+    pointer-events: auto;
+    }
+/*-----------Hero section -----------*/
+
+.hero{
+    padding-top: 15rem;
+}
+.hero h2{
+    font-size: 1.5rem;
+    background: red;
+    width: 100px;
+    text-align: center;
+    padding: 4px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.hero h1{
+    color: #fff;
+    font-weight: bold;
+    padding-top: 1rem;
+    font-size: 3rem;
+}
+.hero p{
+    color: lightcyan;
+    font-size: 16px;
+    padding-top: 1rem;
+}
+.hero button{
+    color: #fff;
+    background: red;
+    padding:0.5rem 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+.hero-btn a{
+    margin-left: 1rem;
+    background: red;
+    padding:0.5rem 0.8rem;
+    border-radius: 50%;
+    color: #fff;
+}
+.hero-img img{
+    width: 100%;
+    height:100%;
+}
+/*-------------About me-------------*/
+.about-img{
+    height: 500px;
+    width: 350px;
+}
+.about-img img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #fff;
+}
+.about-text h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.about-text h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.about-text p{
+    color: #fff;
+line-height: 1.7em;
+text-align: justify;
+padding-bottom: 1rem;
+font-size: 16px;
+}
+.about-text button{
+padding: 0.5rem 1rem;
+color: #fff;
+background: red;
+font-size: 20px;
+border-radius: 0.5rem;
+}
+/*-------------Service------------*/
+.services{
+    text-align: center;
+}
+.services h2{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 0.6;
+    color: red;
+}
+.services h3{
+    font-size: 1rem;
+    color: #fff;
+}
+.services-text{
+    text-align: center;
+}
+.services-text i{
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.services-text h3{
+font-weight: bold;
+font-size: 1.5rem;
+padding-top: 1rem;
+}
+.services-text p{
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.7em;
+    color: #fff;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+.services-text button{
+border: 1px solid #fff;
+color:#fff;
+background: red;
+padding: 0.3rem 1rem;
+border-radius: 0.5rem;
+}
+/*--------------best skill -----------*/
+.skill-text h2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.skills h2{
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 1rem;
+}
+ .progress-bar{
+    width: 95%;
+    font-size: 1.3rem;
+    background: red;
+    padding-bottom: 0.5rem;
+ }
+ .bg-green{
+    width: 85%;
+    background: green;
+ }
+ .bg-yellow{
+    background: rgb(123, 95, 16);
+    width: 90%;
+ }
+ .bg-blue{
+    background: blue;
+    width: 80%;
+ }
+ .bg-naby{
+    background:rgb(109, 61, 231);
+    width: 75%;
+ }
+ .bg-grey{
+    background: rgba(85, 4, 71, 0.687);
+    width: 70%;
+ }
+ .bg-gray{
+    background: rgba(27, 13, 89, 0.687);
+    width: 70%;
+ }
+ /*------------our latest project--------------*/
+ .latest h2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+ }
+.latest-img{
+    width: 100%;
+    height: 100%;
+    border-radius:0.5rem;
+    cursor: pointer;
+}
+.latest-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+/*----------footer section----------*/
+.footer{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.footertext h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.footertext h3{
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+.footertext p{
+    font-size: 16px;
+    color: #fff;
+    padding-top: 1rem;
+}
+.footertext .social-media{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.footertext .social-media a{
+background: red;
+color: #fff;
+font-size: 1rem;
+text-decoration: none;
+padding: 0.5rem 0.6rem;
+border-radius: 50%;
+margin-right: 1rem;
+}
+.footertext .social-media a:hover{
+    border: 1px solid #fff;
+}
+.footer-form form label{
+font-size: 1rem;
+font-weight: bold;
+color: #fff;
+padding-top: 1rem;
+}
+.footer-form form input{
+    border: none;
+    outline: none;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    padding: 0.5rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+.footer-form form textarea{
+    background: none;
+    outline: none;
+    border: none;
+    border: 1px solid #fff;
+    margin-top: 1rem;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 1rem;
+}
+.footer-form form textarea::placeholder{
+    color: #fff;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+.footer-form form button{
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #fff;
+    font-weight: bold;
+    background: red;
+    color: #fff;
+    font-size: 1rem;
+    width: 100%;
+    display: block;
+}
+.menu{
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 0.5rem 0.7rem;
+    font-size: 1rem;
+z-index: 1000;
+cursor: pointer;
+display: none;
+}
+.profileimg{
+    display: none;
+}
+.social-icon{
+    display: none;
+}
+@media only screen and (max-width: 771px){
+nav{
+    position: fixed;
+    top: 0rem;
+    margin-left: -110%;
+    background: #000;
+    height: 100vh;
+    width: 100%;
+    transition: 0.5s;
+    z-index: 100;
+    transition: 0.5s;
+}
+.nav-on{
+    margin-left: 0%;
+}
+nav a{
+    display: block;
+    text-align: center;
+    line-height: 3em;
+    margin-right: 1rem;
+}
+a.active, a:hover{
+    background: none;
+}
+.nav-profile{
+    padding-top: 4rem;
+}
+.profileimg{
+    display: block;
+    text-align: center;
+}
+.profileimg img{
+    width: 100px;
+    height: 200px;
+}
+.profileimg h2{
+    font-size: 1.5rem;
+    margin-top: -1.5rem;
+}
+.social-icon{
+    text-align: center;
+    display: block;
+}
+.social-icon a{
+    text-align: center;
+    display: inline;
+    background: red;
+    padding: 0.3rem 0.5rem;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+.menu{
+    display: block;
+}
+.hero{
+    padding-top: 7rem;
+}
+}
